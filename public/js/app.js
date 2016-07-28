@@ -23,11 +23,11 @@
                 controller: "WelcomeController",
                 controllerAs: "WelcomeViewModel"
             })
-            .state("Game", {
+            .state("Play", {
                 url: "/play",
-                templateUrl: "/assets/js/game.html",
-                controller: "GameController",
-                controllerAs: "GameViewModel"
+                templateUrl: "/assets/js/play.html",
+                controller: "PlayController",
+                controllerAs: "PlayViewModel"
             })
         $urlRouterProvider.otherwise("/")
     }

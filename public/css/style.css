@@ -1,13 +1,19 @@
 @import 'https://fonts.googleapis.com/css?family=Cinzel:900';
 body {
-    background-color: white;
-    color: black;
+    background: url("/assets/images/background.png") repeat-y center center;
+    background-size: cover;
+    animation: backgroundScroll 10s linear infinite;
+    color: white;
     font-family: 'Cinzel', sans-serif;
+}
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: 0 400px;}
 }
 .splash {
     text-align: center;
     font-size: 7em;
-    border: .1em solid black;
+    border: .1em solid white;
     left: 35%;
     width: 3.6em;
     position: absolute;
@@ -21,8 +27,42 @@ body {
     height: 100%;
     width: 100%;
 }
-.ship {
+.ship1 {
     height: 3em;
     width: auto;
     z-index: 2;
+    visibility: hidden;
 }
+
+.bee {
+    height: 3em;
+    width: auto;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.player1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.player2 {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+
+.bullet {
+    height: .4em;
+    width: .4em;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 5;
+    /*animation: bulletFire 3s linear;*/
+}
+/*@keyframes bulletFire {
+    from {position: 0 0;}
+    to {position: 0 -1000px;}
+}*/
