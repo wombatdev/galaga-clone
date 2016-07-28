@@ -1,17 +1,28 @@
 @import 'https://fonts.googleapis.com/css?family=Cinzel:900';
-
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Cinzel', sans-serif;
 }
-
 .splash {
     text-align: center;
     font-size: 7em;
-    border: .1em solid white;
+    border: .1em solid black;
     left: 35%;
     width: 3.6em;
     position: absolute;
     top: 35%;
+}
+.main {
+    height: 100%;
+    width: 100%;
+}
+.screen {
+    height: 100%;
+    width: 100%;
+}
+.ship {
+    height: 3em;
+    width: auto;
+    z-index: 2;
 }
