@@ -17,7 +17,7 @@ body {
     height: 100%;
     width: 100%;
 }
-.screen {
+/*.screen {
     height: 100%;
     width: 100%;
 }
@@ -25,4 +25,23 @@ body {
     height: 3em;
     width: auto;
     z-index: 2;
+}*/
+
+canvas {
+    position: absolute;
+    background: transparent;
 }
+
+#background {
+    width: 98vw;
+    height: 96vh;
+    z-index: 2;
+}
+
+/*#main {
+    z-index: -1;
+}
+
+#ship {
+    z-index: 0;
+}*/

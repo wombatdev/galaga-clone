@@ -24,11 +24,13 @@ app.get('/*', function(req, res) {
     res.render('game');
 });
 
-// io.on('connection', function(socket) {
-//     socket.on('chat message', function(msg) {
-//         io.emit('chat message', msg);
-//     });
-// });
+io.on('connection', function(socket) {
+    console.log("user connected");
+    socket.on('player1move', function(msg) {
+        console.log(msg);
+        io.emit('player1move', msg);
+    });
+});
 
 http.listen(3001, function() {
     console.log("We're online on *:3001");
