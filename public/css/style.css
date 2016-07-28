@@ -1,6 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Cinzel:900';
 body {
-    background-color: black;
+    background: url("/assets/images/background.png") no-repeat center center fixed;
+    background-size: cover;
     color: white;
     font-family: 'Cinzel', sans-serif;
 }
@@ -52,7 +53,7 @@ body {
     left: 100px;
 }
 
-.bee {
+.player2 {
     position: absolute;
     top: 100px;
     left: 400px;
