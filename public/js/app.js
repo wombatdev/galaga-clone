@@ -17,11 +17,11 @@
     function RouterFunction($stateProvider, $locationProvider, $urlRouterProvider) {
         $locationProvider.html5Mode(true)
         $stateProvider
-            .state("Index", {
+            .state("Welcome", {
                 url: "/",
-                templateUrl: "/assets/js/index.html",
-                controller: "IndexController",
-                controllerAs: "IndexViewModel"
+                templateUrl: "/assets/js/welcome.html",
+                controller: "WelcomeController",
+                controllerAs: "WelcomeViewModel"
             })
             // .state("Show", {
             //     url: "/restaurants/:name",

@@ -3,16 +3,15 @@
 (function() {
     angular
         .module("galaga")
-        .controller("IndexController", [
+        .controller("WelcomeController", [
             "$scope",
-            IndexControllerFunction
+            WelcomeControllerFunction
         ])
 
-    function IndexControllerFunction($scope) {
-        var vm = this;
-        vm.messages = [];
-        vm.newMessage = '';
+    function WelcomeControllerFunction($scope) {
         var socket = io();
+        var vm = this;
+
 
         // vm.sendMessage = function() {
         //     socket.emit('chat message', vm.newMessage);
