@@ -1,0 +1,7 @@
+<ul id="messages">
+    <li data-ng-repeat="message in IndexViewModel.messages track by $index">{{message}}</li>
+</ul>
+<form data-ng-submit="IndexViewModel.sendMessage()">
+    <input data-ng-model="IndexViewModel.newMessage" autocomplete="off" />
+    <button type="submit">Send</button>
+</form>
