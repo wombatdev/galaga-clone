@@ -1,13 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Cinzel:900';
 body {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     font-family: 'Cinzel', sans-serif;
 }
 .splash {
     text-align: center;
     font-size: 7em;
-    border: .1em solid black;
+    border: .1em solid white;
     left: 35%;
     width: 3.6em;
     position: absolute;
@@ -17,17 +17,25 @@ body {
     height: 100%;
     width: 100%;
 }
-/*.screen {
+.screen {
     height: 100%;
     width: 100%;
 }
-.ship {
+.ship1 {
     height: 3em;
     width: auto;
     z-index: 2;
-}*/
+    visibility: hidden;
+}
 
-canvas {
+.bee {
+    height: 3em;
+    width: auto;
+    z-index: 2;
+    visibility: hidden;
+}
+
+/*canvas {
     position: absolute;
     background: transparent;
 }
@@ -36,6 +44,18 @@ canvas {
     width: 98vw;
     height: 96vh;
     z-index: 2;
+}*/
+
+.player1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.bee {
+    position: absolute;
+    top: 100px;
+    left: 400px;
 }
 
 /*#main {

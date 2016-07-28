@@ -25,7 +25,8 @@ app.get('/*', function(req, res) {
 });
 
 io.on('connection', function(socket) {
-    console.log("user connected");
+    io.emit('player1', 'player1');
+    console.log("player joined");
     socket.on('player1move', function(msg) {
         console.log(msg);
         io.emit('player1move', msg);

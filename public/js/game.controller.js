@@ -129,6 +129,7 @@
                 }
                 };
             socket.on('player1move', function(msg) {
+                console.log(msg);
                 if (msg == 37) { // left arrow
                     player1.ship.move(-1, 0);
                 } else if (msg == 39) { // right arrow
