@@ -145,6 +145,8 @@
             }
         };
 
+        
+
         // vm.sendMessage = function() {
         //     socket.emit('chat message', vm.newMessage);
         //     vm.newMessage = "";
