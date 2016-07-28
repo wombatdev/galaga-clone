@@ -23,12 +23,12 @@
                 controller: "WelcomeController",
                 controllerAs: "WelcomeViewModel"
             })
-            // .state("Show", {
-            //     url: "/restaurants/:name",
-            //     templateUrl: "/assets/js/show.html",
-            //     controller: "ShowController",
-            //     controllerAs: "ShowViewModel"
-            // })
+            .state("Game", {
+                url: "/play",
+                templateUrl: "/assets/js/game.html",
+                controller: "GameController",
+                controllerAs: "GameViewModel"
+            })
         $urlRouterProvider.otherwise("/")
     }
 

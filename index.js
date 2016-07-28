@@ -21,7 +21,7 @@ app.use(parser.json({
 }))
 
 app.get('/', function(req, res) {
-    res.render('chat');
+    res.render('game');
 });
 
 // io.on('connection', function(socket) {
